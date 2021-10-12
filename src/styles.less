@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+/* testando LESS */
+/* Application-wide Styles */
+/*declarando os dados dentro de variáveis*/
+@colorh1: #369;
+@colorh2h3: #444;
+@font: Arial, Helvetica, sans-serif;
+@colorBody: #333;
+
+h1 {
+  /*inserindo a variavel '@colorh1' para setar a cor*/
+  color: @colorh1;
+  font-family: @font;
+  font-size: 250%;
+}
+
+h2,
+h3 {
+  color: @colorh2h3;
+  font-family: @font;
+  font-weight: lighter;
+}
+
+body {
+  margin: 2em;
+}
+
+body,
+input[type="text"],
+button {
+  color: @colorBody;
+  font-family: Cambria, Georgia, serif;
+}
+
+/* everywhere else */
+* {
+  font-family: @font;
+}
