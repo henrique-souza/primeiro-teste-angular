@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pessoas } from '../pessoa';
 
 @Component({
   selector: 'app-pessoas',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pessoas.component.less'],
 })
 export class PessoasComponent implements OnInit {
-  pessoa = 'João';
+  pessoa: Pessoas = {
+    id: 1,
+    name: 'João',
+  };
 
   constructor() {}
 
